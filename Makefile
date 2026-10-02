@@ -26,7 +26,7 @@
 #    along with this program.
 #    If not, see <https://www.gnu.org/licenses/>.
 
-_PROJECT=evm-contracts-tools
+_PROJECT=evm-openpgp-keyserver
 PREFIX ?= /usr/local
 DOC_DIR=$(DESTDIR)$(PREFIX)/share/doc/$(_PROJECT)
 DATA_DIR=$(DESTDIR)$(PREFIX)/share/$(_PROJECT)
@@ -88,4 +88,15 @@ install-man:
 	    "$(MAN_DIR)/man1/$${_file%.rst}"; \
 	done
 
-.PHONY: build-man install install-doc install-man
+uninstall: uninstall-man
+
+uninstall-man:
+
+	for _file in $(MAN_FILES); do \
+	  rm \
+	    -vrf \
+	    "$(MAN_DIR)/man1/$${_file%.rst}"; \
+	done
+
+
+.PHONY: build-man install install-doc install-man uninstall uninstall-man

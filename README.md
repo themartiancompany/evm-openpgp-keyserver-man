@@ -24,10 +24,10 @@
 [comment]: <> (with this program.)
 [comment]: <> (If not, see <https://www.gnu.org/licenses/>.)
 
-# EVM Contracts Tools manual
+# EVM OpenPGP Keyserver manual
 
-The [EVM Contracts Tools](
-  https://github.com/themartiancompany/evm-contracts-tools)
+The [Ethereum Virtual Machine OpenPGP Key Server](
+  https://github.com/themartiancompany/evm-openpgp-keyserver)
 manuals.
 
 ## Installation
@@ -45,7 +45,7 @@ the uncensorable
 [Ur](
   https://github.com/themartiancompany/ur)
 user repository and application store as
-`evm-contracts-tools`.
+`evm-openpgp-keyserver`.
 The source code is published on the
 [Ethereum Virtual Machine File System](
   https://github.com/themartiancompany/evmfs)
@@ -55,25 +55,27 @@ To install it from there just type
 
 ```bash
 ur \
-  evm-contracts-tools
+  evm-openpgp-keyserver
 ```
 
 A censorable HTTP Github mirror of the recipe published there,
 containing a full list of the software dependencies needed to run the
 tools is hosted on
-[evm-contracts-tools-ur](
-  https://github.com/themartiancompany/evm-contracts-tools-ur).
+[evm-openpgp-keyserver-ur](
+  https://github.com/themartiancompany/evm-openpgp-keyserver-ur).
 Be aware the mirror could go offline any time as Github and more
 in general all HTTP resources are inherently unstable and censorable.
 
-A package has also been released on NPM as `evm-wallet.js` and
-can be installed with
+A Javascript package has also been released on NPM as
+`evm-openpgp-keyserver` and can be installed with
 
 ```bash
 npm \
   install \
-    evm-contracts-tools
+    evm-openpgp-keyserver
 ```
+
+but at the time of writing this program port still has to start.
 
 ## License
 

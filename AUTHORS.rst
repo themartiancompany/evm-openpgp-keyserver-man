@@ -28,7 +28,7 @@
 
 
 ==============================================
-EVM Contracts Tools manuals authors
+EVM OpenPGP Keyserver manuals authors
 ==============================================
 
 * Pellegrino Prevete
